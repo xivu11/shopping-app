@@ -1,0 +1,10 @@
+<h6>Product Details</h6>
+
+<p>Name : <%= @product.name %><br>
+Price : <%= @product.price %><br>
+Brand : <%= @product.brand %></p>
+
+<%= form_with url: "/orders", method: :post do |form| %>
+    <%= hidden_field_tag 'product_id', @product.id %>
+    <%= form.submit "Add To Cart" %>
+<% end %>

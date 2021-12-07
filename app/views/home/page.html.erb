@@ -1,0 +1,7 @@
+<% user = current_user.present? ? current_user.firstname : ''%>
+<h1>Welcome <%= user %> to Shopping Studio!</h1>
+
+<%= link_to 'Show Products',products_path %>
+<% if current_user.present? %>
+    <%= link_to 'Show Orders',orders_path %>
+<% end %>

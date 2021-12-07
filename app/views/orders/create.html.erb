@@ -1,0 +1,10 @@
+<h3>Welcome to Cart</h3>
+
+<p>
+Order Id : <%= @order.id %><br>
+Product Name: <%= @product.name %><br>
+Price: <%= @product.price %></p> 
+Order Date : <%= @order.created_at %><br>
+</p>
+
+<%= button_to "Buy Now!" , checkout_create_path, params: {id: @product.id}, remote: true %> 

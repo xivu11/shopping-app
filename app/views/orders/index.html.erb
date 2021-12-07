@@ -1,0 +1,6 @@
+<h3>Purchased Orders</h3>
+<ul>
+    <% @orders.each do |order| %>
+        <li><%= link_to order.id,order%></li>
+    <% end %>
+</ul>
