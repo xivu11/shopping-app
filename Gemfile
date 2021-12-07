@@ -62,3 +62,4 @@ gem 'draper'
 gem 'pundit'
 
 gem 'stripe'
+gem 'pry'
