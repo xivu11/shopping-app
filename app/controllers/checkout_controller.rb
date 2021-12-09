@@ -12,7 +12,7 @@ class CheckoutController < ApplicationController
         }],
         mode: 'payment',
         success_url: orders_url ,
-        cancel_url: orders_url ,
+        cancel_url: root_url ,
       })
       respond_to do |format|
         format.js
